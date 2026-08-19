@@ -5,11 +5,15 @@ RUTA_USUARIOS = "data/usuarios.json"
 RUTA_PRESTAMOS = "data/prestamos.json"
 RUTA_LOGS = "logs/eventos.log"
 RUTA_SOLICITUDES = "data/solicitudes.json"
+# Rutas de archivos de reportes
+RUTA_REPARACIONES = "reports/reparaciones.json"
 
 # Constantes de herramientas
 CATEGORIAS = ["Construccion", "Jardineria", "Electricidad", "Pintura"]
-ESTADOS_HERRAMIENTA = ["Activa", "Devuelto", "En mantenimiento", "Inactiva"]
+ESTADOS_HERRAMIENTA = ["Activa", "En reparacion", "Inactiva"]
+ESTADO_ACTIVA = "Activa"
 ESTADO_INACTIVA = "Inactiva"
+ESTADO_REPARACION = "En reparacion"
 STOCK_MINIMO = 3
 
 # Constantes de usuarios
@@ -25,3 +29,7 @@ DIAS_PRESTAMO = 7
 
 # Constantes de permisos
 ESTADOS_SOLICITUD = ["Pendiente", "Aprobada", "Rechazada"]
+
+# Contantes del examen (reparaciones)
+ESTADOS_REPARACION = ["En reparacion", "finalizada"]
+DIAS_REPARACION = 5
