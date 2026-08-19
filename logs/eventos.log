@@ -130,3 +130,28 @@
 2026-08-11 19:22:21 - INFO - Programa finalizado
 2026-08-12 18:51:27 - INFO - Programa iniciado
 2026-08-12 18:51:32 - INFO - Programa finalizado
+2026-08-18 19:56:38 - INFO - Programa iniciado
+2026-08-18 19:56:47 - INFO - Inicio de sesion - Usuario: 1
+2026-08-18 19:57:36 - ERROR - Error inesperado: object of type 'bool' has no len()
+2026-08-18 19:58:14 - INFO - Programa iniciado
+2026-08-18 19:58:17 - INFO - Inicio de sesion - Usuario: 1
+2026-08-18 19:58:21 - ERROR - Error inesperado: object of type 'bool' has no len()
+2026-08-18 19:59:34 - INFO - Programa iniciado
+2026-08-18 19:59:38 - INFO - Inicio de sesion - Usuario: 1
+2026-08-18 20:00:06 - INFO - Reparacion #1 de 'Taladro' iniciada, en reparacion hasta 2026-08-19 - Usuario: 1
+2026-08-18 20:01:16 - INFO - Reparacion #1 finalizada: 'Taladro' vuelve a Activa - Usuario: 1
+2026-08-18 20:01:37 - INFO - Cierre de sesion - Usuario: 1
+2026-08-18 20:01:40 - INFO - Programa finalizado
+2026-08-18 20:02:46 - INFO - Programa iniciado
+2026-08-18 20:03:01 - INFO - Inicio de sesion - Usuario: 1
+2026-08-18 20:03:45 - INFO - Herramienta id 2 actualizada
+2026-08-18 20:04:19 - INFO - Reparacion #2 de 'Martillo' iniciada, en reparacion hasta 2026-08-20 - Usuario: 1
+2026-08-18 20:05:35 - INFO - Reparacion #2 finalizada: 'Martillo' vuelve a Activa - Usuario: 1
+2026-08-18 20:06:02 - INFO - Cierre de sesion - Usuario: 1
+2026-08-18 20:06:04 - INFO - Programa finalizado
+2026-08-18 20:06:58 - INFO - Programa iniciado
+2026-08-18 20:07:06 - INFO - Inicio de sesion - Usuario: 1
+2026-08-18 20:07:19 - INFO - Reparacion #3 de 'Taladro' iniciada, en reparacion hasta 2026-08-23 - Usuario: 1
+2026-08-18 20:07:51 - INFO - Reparacion #3 finalizada: 'Taladro' vuelve a Activa - Usuario: 1
+2026-08-18 20:08:00 - INFO - Cierre de sesion - Usuario: 1
+2026-08-18 20:08:02 - INFO - Programa finalizado

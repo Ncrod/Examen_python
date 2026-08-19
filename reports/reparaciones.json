@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "herramienta_id": 1,
+        "nombre": "Taladro",
+        "fecha_inicio": "2026-08-18",
+        "fecha_estimada": "2026-08-19",
+        "fecha_finalizacion": "2026-08-18",
+        "estado": "finalizada",
+        "observaciones": "Ninguna observacion | Cierre: Solo hubo limpieza"
+    },
+    {
+        "id": 2,
+        "herramienta_id": 2,
+        "nombre": "Martillo",
+        "fecha_inicio": "2026-08-18",
+        "fecha_estimada": "2026-08-20",
+        "fecha_finalizacion": "2026-08-18",
+        "estado": "finalizada",
+        "observaciones": "Cabeza oxidada | Cierre: Cabeza sin oxido"
+    },
+    {
+        "id": 3,
+        "herramienta_id": 1,
+        "nombre": "Taladro",
+        "fecha_inicio": "2026-08-18",
+        "fecha_estimada": "2026-08-23",
+        "fecha_finalizacion": "2026-08-18",
+        "estado": "finalizada",
+        "observaciones": "Ninguna | Cierre: Ningunoo"
+    }
+]

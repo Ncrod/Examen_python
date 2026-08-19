@@ -6,6 +6,7 @@ from modulos import usuarios
 from modulos import prestamos
 from modulos import reportes
 from modulos import permisos
+from modulos import reparaciones
 from config import RUTA_USUARIOS
 import os
 import sys
@@ -183,6 +184,35 @@ def menu_reportes(usuario):
         utilidades.pausar()
 
 
+
+def menu_reparaciones(usuario):
+    while True:
+        titulo("\U0001F6E0 REPARACIONES", ROJO)
+        opcion_menu(1, "Registrar reparacion")
+        opcion_menu(2, "Listar reparaciones")
+        opcion_menu(3, "Finalizar reparaciones")
+        opcion_menu(4, "Revisar plazos vencidos")
+        volver()
+
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
+
+        if opcion == 1:
+            reparaciones.registrar_reparacion(usuario)
+        elif opcion == 2:
+            reparaciones.listar_reparaciones()
+        elif opcion == 3:
+            reparaciones.finalizar_reparacion(usuario)
+        elif opcion == 4:
+            reparaciones.revisar_vencidas()
+        elif opcion == 0:
+            return
+        else:
+            print(ROJO + "Opcion invalida." + RESET)
+
+        utilidades.pausar()
+
+
+
 def menu_admin(usuario):
     while True:
         titulo("\U0001F6E0 MENU ADMINISTRADOR - " + usuario["nombres"], CYAN)
@@ -190,6 +220,7 @@ def menu_admin(usuario):
         opcion_menu(2, "Usuarios")
         opcion_menu(3, "Prestamos")
         opcion_menu(4, "Reportes")
+        opcion_menu(5, "Reparaciones")
         volver("Cerrar sesion")
 
         opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
@@ -202,6 +233,8 @@ def menu_admin(usuario):
             menu_prestamos(usuario)
         elif opcion == 4:
             menu_reportes(usuario)
+        elif opcion == 5:
+            menu_reparaciones(usuario)
         elif opcion == 0:
             logs.info("Cierre de sesion", usuario=usuario["id"])
             return
@@ -267,6 +300,7 @@ def main():
 
     logs.info("Programa iniciado")
     crear_admin_inicial()
+    reparaciones.revisar_vencidas(silencioso=True)
 
     while True:
         usuario = permisos.iniciar_sesion()

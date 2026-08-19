@@ -12,7 +12,7 @@
         "nombre": "Martillo",
         "categoria": "Construccion",
         "cantidad": 6,
-        "estado": "Inactiva",
+        "estado": "Activa",
         "valor": 50000
     },
     {

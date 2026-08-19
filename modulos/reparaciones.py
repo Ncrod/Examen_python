@@ -14,7 +14,7 @@ def registrar_reparacion(usuario):
     reparaciones = almacenamiento.cargar(RUTA_REPARACIONES)
     herramientas = almacenamiento.cargar(RUTA_HERRAMIENTAS)
 
-    if len(reparaciones == 0):
+    if len(herramientas) == 0:
         print("\nNo hay herramientas en reparacion.")
         return
 
@@ -38,7 +38,7 @@ def registrar_reparacion(usuario):
         logs.advertencia("Reparacion duplicada: herramienta ya en reparacion: " + herramienta["nombre"])
         return
 
-    dias = utilidades.pedir_entero("Dias estimados de reparacion " + str(DIAS_REPARACION) + "por defecto, 0 para usarlo: ", 0)
+    dias = utilidades.pedir_entero("Dias estimados de reparacion " + str(DIAS_REPARACION) + " por defecto, 0 para usarlo: ", 0)
 
     if dias == 0:
         dias = DIAS_REPARACION
